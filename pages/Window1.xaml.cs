@@ -28,7 +28,7 @@ namespace пavrilov_rul.pages
             if (string.IsNullOrEmpty(input))
             {
                 txtResultTask1.Text = "Ошибка: Введите число!";
-                return; // test
+                return; // test1
             }
 
             if (!long.TryParse(input, out long number))
