@@ -1,0 +1,68 @@
+﻿<Window x:Class="пavrilov_rul.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        Height="650" 
+        Width="900"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Шапка -->
+        <Grid Grid.Row="0" Background="#FF76E3B3">
+            <TextBlock Text="Вариант №4" 
+                       FontSize="28" 
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        </Grid>
+
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center"
+                    Margin="10">
+            <Button x:Name="btnWindow1" 
+                    Content="Задача 1" 
+                    Width="140" 
+                    Height="40"
+                    Margin="5"
+                    FontSize="14"
+                    Click="btnWindow1_Click"/>
+            <Button x:Name="btnWindow2" 
+                    Content="Задача 2" 
+                    Width="140" 
+                    Height="40"
+                    Margin="5"
+                    FontSize="14"
+                    Click="btnWindow2_Click"/>
+            <Button x:Name="btnWindow3" 
+                    Content="Задача 3" 
+                    Width="140" 
+                    Height="40"
+                    Margin="5"
+                    FontSize="14"
+                    Click="btnWindow3_Click"/>
+            <Button x:Name="btnWindow4" 
+                    Content="Задача 4" 
+                    Width="140" 
+                    Height="40"
+                    Margin="5"
+                    FontSize="14"
+                    Click="btnWindow4_Click"/>
+            <Button x:Name="btnWindow5" 
+                    Content="Задача 5" 
+                    Width="140" 
+                    Height="40"
+                    Margin="5"
+                    FontSize="14"
+                    Click="btnWindow5_Click"/>
+        </StackPanel>
+
+        <Frame x:Name="FrmMain" 
+               Grid.Row="2" 
+               NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
